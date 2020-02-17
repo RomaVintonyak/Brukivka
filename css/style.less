@@ -1,13 +1,13 @@
 // compress: true
 @import "vars.less";
 /*google fonts*/
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Raleway:400,600,700&display=swap&subset=latin-ext");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Roboto:400,700&display=swap&subset=cyrillic,cyrillic-ext');
 
 html {
   font-size: 15px;
 }
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   -webkit-font-smoothing: antialiased;
   color: @black;
@@ -45,6 +45,11 @@ a {
 /*lightbox https://lokeshdhakar.com/projects/lightbox2/ */
 @import "vendor/lightbox.less";
 /*blocks*/
-
+/*1. container*/
+@import "block/container.less";
+/*2. header__top*/
+@import "block/header__top.less";
+/*3. nav*/
+@import "block/nav.less";
 /*Helpers*/
 @import "help.less";
