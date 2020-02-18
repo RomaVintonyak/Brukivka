@@ -206,28 +206,59 @@
       <div class="services__preview">
         <div class="preview__slider">
           <div id="previewSlider">
-          <div class="preview__img">
-            <img src="https://placehold.it/1024x500/abc03s?text=imageSlider" alt="yard" class="img">
-          </div>
-          <div class="preview__img">
-            <img src="https://placehold.it/1024x500/qwe13s?text=imageSlider" alt="yard" class="img">
-          </div>
-          <div class="preview__img">
-            <img src="https://placehold.it/1024x500/fbv03s?text=imageSlider" alt="yard" class="img">
-          </div>
-          <div class="preview__img">
-            <img src="https://placehold.it/1024x500/123ews?text=imageSlider" alt="yard" class="img">
+            <div class="preview__img">
+              <img
+                src="https://placehold.it/1024x500/abc03s?text=imageSlider"
+                alt="yard"
+                class="img"
+              />
+            </div>
+            <div class="preview__img">
+              <img
+                src="https://placehold.it/1024x500/qwe13s?text=imageSlider"
+                alt="yard"
+                class="img"
+              />
+            </div>
+            <div class="preview__img">
+              <img
+                src="https://placehold.it/1024x500/fbv03s?text=imageSlider"
+                alt="yard"
+                class="img"
+              />
+            </div>
+            <div class="preview__img">
+              <img
+                src="https://placehold.it/1024x500/123ews?text=imageSlider"
+                alt="yard"
+                class="img"
+              />
+            </div>
           </div>
         </div>
-      </div><!--/.preview__slider-->
-      <div class="preview__content">
-
-      </div>
+        <!--/.preview__slider-->
+        <div class="preview__content">
+          
+        </div>
       </div>
     </section>
     <!--use vendor scrpitp-->
     <!--use jquery library-->
     <script src="js/vendor/jquery-3.4.1.min.js"></script>
+    <!--use sclick slider https://kenwheeler.github.io/slick/ -->
+    <script src="js/vendor/slick.min.js"></script>
+    <!--init previewSlider-->
+    <script>
+      var previewSlider = $("#previewSlider");
+      previewSlider.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: true
+      });
+    </script>
     <!--use main script-->
     <!--show more to servicess cat-->
     <script src="js/block/show__more.js"></script>
