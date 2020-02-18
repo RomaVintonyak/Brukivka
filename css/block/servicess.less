@@ -51,4 +51,41 @@
 }
 .preview__content{
   width: 50%;
+  background-color: @gray-l;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 2.5rem;
+}
+.preview__colum{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  img{
+    margin-right: 1rem;
+  }
+}
+.preview__colum--text{
+  h4{
+    font-family: @monserat;
+    font-size: 1.7rem;
+    color: @gray;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+  }
+  p{
+    font-weight: 400;
+    color: @gray;
+    font-size: 1.2rem;
+  }
+  &:hover{
+    h4{
+      color: @orange;
+    }
+  }
 }
