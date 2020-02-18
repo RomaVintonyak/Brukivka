@@ -1,0 +1,65 @@
+//main: ../style.less
+
+.portfolio__content{
+  margin: 3rem 0;
+  display: flex;
+  width: 100%;
+}
+.portfolio__colum{
+  width: 33.33333%;
+  position: relative;
+  img{
+    opacity: 0.7;
+    z-index: 2;
+    transition: opacity 0.3s ease-in-out;
+  }
+  &:hover{
+    img{
+      opacity: 1;
+    }
+    .portfolio__icon{
+      visibility: visible;
+    }
+    .portfolio__footer{
+      visibility: visible;
+    }
+  }
+}
+.portfolio__icon{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.portfolio__footer{
+  position: absolute;
+  bottom: 0;
+  height: 4rem;
+  background-color: @gray-l;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  h5{
+    font-family: @monserat;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: @gray;
+    margin-bottom: 0.5rem;
+  }
+  span{
+    width: 2rem;
+    height: 3px;
+    background-color: @black;
+  }
+}
