@@ -1,0 +1,39 @@
+//main: ../style.less
+.services__content{
+  margin: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.services__collum{
+  width: 30%;
+  img{
+    opacity: 0.7;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  h3{
+    font-family: @monserat;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: @gray;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease-in-out;
+  }
+  p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+  &:hover{
+    img{
+      opacity: 1;
+      transform: translateY(-1rem);
+      box-shadow: 0 0 10px @gray;
+    }
+    h3{
+      color: @orange;
+    }
+  }
+}
