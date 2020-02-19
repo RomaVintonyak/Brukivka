@@ -21,8 +21,16 @@
     -webkit-transform 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
     border-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out,
+    -webkit-transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
+    border-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out,
     box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out,
+    -webkit-transform 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out,
     box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out,
     -webkit-transform 0.3s ease-in-out;
@@ -55,4 +63,11 @@
       color: @black;
     }
   }
+}
+.price__link {
+  width: 100%;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around;
 }
