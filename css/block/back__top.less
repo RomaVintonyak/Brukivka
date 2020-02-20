@@ -1,0 +1,23 @@
+//main: ../style.less
+.back__top{
+  position: fixed;
+  bottom: 5%;
+  right: 1%;
+  z-index: 2;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(76, 91, 109, 0.7);
+  text-align: center;
+  line-height: 35px;
+  -webkit-transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  i{
+    color: @white;
+    font-size: 1.2rem;
+  }
+  &:hover{
+    cursor: pointer;
+    background-color: rgba(76, 91, 109, 1);
+    box-shadow: 0 0 5px rgba(76, 91, 109, 1);
+  }
+}
