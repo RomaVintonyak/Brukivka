@@ -3,6 +3,9 @@
   width: 100%;
   background-color: @orange;
   margin: 2rem 0;
+  @media @mobile {
+    margin: 1.5rem 0;
+  }
 }
 .conter__content {
   width: 100%;
@@ -10,6 +13,13 @@
   display: flex;
   -webkit-box-pack: justify;
   justify-content: space-between;
+  @media @mobile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
 }
 .conter__collum {
   padding: 2rem 0;

@@ -1,64 +1,81 @@
 //main: ../style.less
 
-.portfolio__content{
+.portfolio__content {
   margin: 3rem 0;
+  display: -webkit-box;
   display: flex;
   width: 100%;
   flex-wrap: wrap;
 }
-.portfolio__colum{
+.portfolio__colum {
   width: 33.33333%;
   position: relative;
-  img{
+  img {
     opacity: 0.7;
+    -webkit-transition: opacity 0.3s ease-in-out;
     transition: opacity 0.3s ease-in-out;
     z-index: 3;
   }
-  &:hover{
-    img{
+  &:hover {
+    img {
       opacity: 1;
     }
-    .portfolio__icon{
+    .portfolio__icon {
       visibility: visible;
     }
-    .portfolio__footer{
+    .portfolio__footer {
       visibility: visible;
     }
   }
+  @media @tablet {
+    width: 50%;
+  }
+  @media @mobile {
+    width: 100%;
+  }
 }
-.portfolio__icon{
+.portfolio__icon {
   position: absolute;
   top: 45%;
   left: 45%;
   visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.portfolio__footer{
+.portfolio__footer {
   position: absolute;
   bottom: 0;
   height: 4rem;
   background-color: @gray-l;
   width: 100%;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-direction: column;
   visibility: hidden;
+  -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
-  h5{
+  h5 {
     font-family: @monserat;
     font-size: 1.4rem;
     font-weight: 600;
     color: @gray;
     margin-bottom: 0.5rem;
   }
-  span{
+  span {
     width: 2rem;
     height: 3px;
     background-color: @black;
   }
 }
-.portfolio__button{
+.portfolio__button {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
 }
