@@ -7,11 +7,34 @@
     color: @gray;
     font-weight: 700;
     margin-bottom: 1.5rem;
+    @media @tablet{
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    @media @mobile-sm{
+      font-size: 1.7rem;
+      margin-bottom: 0.8rem;
+    }
   }
   h3{
     font-family: @monserat;
     font-size: 2rem;
     color: @gray;
     font-weight: 400;
+    @media @tablet{
+      font-size: 1.5rem;
+    }
+    @media @mobile-sm{
+      font-size: 1.2rem;
+    }
+  }
+  @media @notebook{
+    padding: 0 20%;
+  }
+  @media @tablet{
+    padding: 0 10%;
+  }
+  @media @mobile{
+    padding: 0;
   }
 }
