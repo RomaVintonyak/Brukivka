@@ -567,34 +567,16 @@
               </h3>
             </div>
             <form method="POST" class="form__send">
-              <input
-                type="text"
-                name="text"
-                id="Name"
-                placeholder="Імя"
-                required
-              />
-              <input
-                type="tel"
-                name="phone"
-                id="Phone"
-                placeholder="Телефон"
-                required
-              />
-              <textarea
-                name="message"
-                id="Message"
-                placeholder="Повідомлення"
-                required
-              ></textarea>
-              <button
-                type="submit"
-                class="btn hvr-shutter-in-horizontal"
-                id="Submit"
-              >
-                Відправити
-              </button>
-            </form>
+              <!-- Hidden Required Fields -->
+		          <input type="hidden" name="project_name" value="Site Name">
+		          <input type="hidden" name="admin_email" value="admin@mail.com">
+		          <input type="hidden" name="form_subject" value="Form Subject">
+		          <!-- END Hidden Required Fields -->
+              <input type="text" name="Name" placeholder="Ваше імя..." required><br>
+		          <input type="mail" name="E-mail" placeholder="Ваш E-mail..." required><br>
+		          <input type="tel" name="Phone" placeholder="Ваш телефон..."><br>
+		          <button class="btn hvr-shutter-in-horizontal">Відправити</button>
+              </form>
           </div>
           <div
             class="location__colum wow fadeInRight"
@@ -725,7 +707,9 @@
     <script src="js/block/fixed__header.js"></script>
     <!--btn scroll top -->
     <script src="js/block/back__top.js"></script>
-     <!--progress bar -->
-     <script src="js/block/progress__bar.js"></script>
+    <!--progress bar -->
+    <script src="js/block/progress__bar.js"></script>
+    <!--ajax mail -->
+    <script src="js/block/form.js"></script>
   </body>
 </html>
