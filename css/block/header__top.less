@@ -1,5 +1,5 @@
 //main: ../style.less
-.fixed__header{
+.fixed__header {
   position: fixed;
   top: 0;
   left: 0;
@@ -15,14 +15,25 @@
   display: flex;
   -webkit-box-align: center;
   align-items: center;
+  @media @mobile {
+    height: 5.5rem;
+  }
 }
 .top__content {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
   justify-content: space-between;
+  @media @mobile {
+    flex-wrap: wrap;
+  }
 }
 .content__text {
+  @media @mobile {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
   p {
     font-size: 1rem;
     font-weight: 600;
@@ -32,6 +43,10 @@
 .content__links {
   display: -webkit-box;
   display: flex;
+  @media @mobile {
+    flex-wrap: wrap;
+    flex-basis: 100%;
+  }
 }
 .block__link {
   margin-right: 2rem;
@@ -52,6 +67,15 @@
     transition: color 0.3s ease-in-out;
     &:hover {
       color: rgba(@gray, 1);
+    }
+  }
+  @media @mobile {
+    flex-basis: 100%;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }
