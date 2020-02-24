@@ -3,8 +3,8 @@ jQuery(document).ready(function(){
   var btnScr = $(".footer__link");
   btnScr.on("click", function(event){
     event.preventDefault();
-    /*$(".burger__icon").removeClass("open");
-    $(".mobile__menu").removeClass("mobile__menu--open");*/
+    $(".burger__icon").removeClass("burger__icon--open");
+    /*$(".mobile__menu").removeClass("mobile__menu--open");*/
     var id = $(this).attr("href"),
     offsetTop = $(id).offset().top;
     $("html, body").animate(
