@@ -136,9 +136,27 @@
       <div
         class="intro__content wow fadeIn"
         data-wow-duration="4s"
-        data-wow-offset="100"
-      >
-        <img src="img/intro/intro_bg.jpg" alt="logo" class="img" />
+        data-wow-offset="100">
+        <div class="intro__slider" id="introSlider">
+          <div class="intro__slider--content">
+            <img src="img/intro/intro_bg1.jpg" alt="logo" class="img" />
+          </div>
+          <div class="intro__slider--content">
+            <img src="img/intro/intro_bg2.jpg" alt="logo" class="img" />
+          </div>
+          <div class="intro__slider--content">
+            <img src="img/intro/intro_bg3.jpg" alt="logo" class="img" />
+          </div>
+          <div class="intro__slider--content">
+            <img src="img/intro/intro_bg4.jpg" alt="logo" class="img" />
+          </div>
+          <div class="intro__slider--content">
+            <img src="img/intro/intro_bg5.jpg" alt="logo" class="img" />
+          </div>
+          <div class="intro__slider--content">
+            <img src="img/intro/intro_bg6.jpg" alt="logo" class="img" />
+          </div>
+        </div>
         <div class="container">
           <div
             class="inhto__header wow fadeInLeft"
@@ -769,7 +787,7 @@
           target="_blank"
         >
           <p>
-            DreamTeam&copy; 2019 &mdash;
+            &commat;BRUKIVKAIF by DreamTeam&copy; 2019 &mdash;
             <script>
               "use script";
               document.write(new Date().getFullYear());
@@ -787,6 +805,18 @@
     <script src="js/vendor/jquery-3.4.1.min.js"></script>
     <!--use sclick slider https://kenwheeler.github.io/slick/ -->
     <script src="js/vendor/slick.min.js"></script>
+     <!--init introSlider-->
+     <script>
+      var introSlider = $("#introSlider");
+      introSlider.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
+        dots: false
+      });
+    </script>
     <!--init previewSlider-->
     <script>
       var previewSlider = $("#previewSlider");
