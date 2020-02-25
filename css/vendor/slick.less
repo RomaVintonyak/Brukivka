@@ -141,3 +141,50 @@
     }
   }
 }
+.slick-prev{
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  z-index: 3;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background-color: transparent;
+  font-size: 0;
+  color: transparent;
+  border-left: 3px solid @white;
+  border-bottom: 3px solid @white;
+  transform: rotate(45deg);
+  transition: border-color 0.3s ease-in-out;
+  &:focus{
+    outline: none;
+  }
+  &:hover{
+    cursor: pointer;
+    border-color: @orange;
+  }
+
+}
+.slick-next{
+  position: absolute;
+  top: 45%;
+  right: 5%;
+  z-index: 3;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background-color: transparent;
+  font-size: 0;
+  color: transparent;
+  border-right: 3px solid @white;
+  border-bottom: 3px solid @white;
+  transform: rotate(-45deg);
+  transition: border-color 0.3s ease-in-out;
+  &:focus{
+    outline: none;
+  }
+  &:hover{
+    cursor: pointer;
+    border-color: @orange;
+  }
+}
